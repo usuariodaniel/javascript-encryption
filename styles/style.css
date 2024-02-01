@@ -169,6 +169,11 @@ textarea:focus::placeholder {
   padding: 2%;
 }
 
+.container--content--buttons-input p {
+  font-size: 1.5rem;
+  font-family: var(--fonte--primaria);
+}
+
 .container--content--buttons-input::placeholder {
   padding: 2%;
   font-family: var(--fonte--primaria);

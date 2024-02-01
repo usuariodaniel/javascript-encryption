@@ -16,11 +16,12 @@
   <main class="container">
     <section class="container--content">
       <div class="container--content--input--message">        
-        <textarea id="entrada" class="container--content--input" placeholder="Digite seu texto aqui!"></textarea>
+        <textarea id="input" class="container--content--input" placeholder="Digite seu texto aqui!"></textarea>
         <div class="container--content-alert">
           <img src="./assets/img/icons8-atenção-50.png" alt="">
           <p>Apenas letras minúsculas e sem acento.</p>
         </div>
+
         <div class="container--content--buttons">
           <button onclick="criptografar()" id="btn-criptografar" class="container--content--button button-1">Criptografar</button>
           <button onclick="descriptografar()" id="descriptografar" class="container--content--button button-2">Descriptografar</button>        
@@ -29,7 +30,9 @@
 
 
       <div class="container--content--message">
-        <textarea id="output" class="container--content--buttons-input" placeholder="Nenhuma mensagem encontrada"></textarea>
+        <div id="output" class="container--content--buttons-input">
+          <p id="saida">Nenhuma Mensagem Encontrada</p>
+        </div>
         <button onclick="copiarTexto()" class="container--content--button button-3">
           COPIAR TEXTO
         </button>
